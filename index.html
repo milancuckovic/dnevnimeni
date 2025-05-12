@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dnevni meni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dnevni Meni</h1>
+            <div class="date" id="current-date"></div>
+            <button class="btn" id="generate-btn">Generiši Novi Meni</button>
+        </header>
+        
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Generisanje menija...</p>
+        </div>
+        
+        <div class="menu-container" id="menu-container">
+            <!-- Doručak -->
+            <div class="meal-type breakfast">
+                <div class="meal-header">
+                    <span>Doručak</span>
+                    <span>🍳</span>
+                </div>
+                <div class="meal-content" id="breakfast-items">
+                    <!-- Ovde će JavaScript ubaciti jela -->
+                </div>
+            </div>
+            
+            <!-- Ručak -->
+            <div class="meal-type lunch">
+                <div class="meal-header">
+                    <span>Ručak</span>
+                    <span>🍲</span>
+                </div>
+                <div class="meal-content" id="lunch-items">
+                    <!-- Ovde će JavaScript ubaciti jela -->
+                </div>
+            </div>
+            
+            <!-- Večera -->
+            <div class="meal-type dinner">
+                <div class="meal-header">
+                    <span>Večera</span>
+                    <span>🍽️</span>
+                </div>
+                <div class="meal-content" id="dinner-items">
+                    <!-- Ovde će JavaScript ubaciti jela -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="meni.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
